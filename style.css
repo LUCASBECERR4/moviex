@@ -1,0 +1,222 @@
+/* nav */
+nav{
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    position: fixed;
+    z-index: 99;
+}
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__container-logo{
+    padding: 1rem 1.5rem;
+}
+.nav__container-logo img{
+    width: 150px;
+}
+.nav__container-links ul{
+    display: flex;
+}
+.nav__container-links a{
+    padding: 1rem;
+    color: var(--textos);
+    transition: all 0.5s;
+}
+.nav__container-links a:hover{
+    color: var(--rojo);
+}
+.nav__container-btn{
+    padding: 1rem 1.5rem;
+}
+.nav__container-btn button{
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.nav__container-btn button:hover{
+    background-color: var(--rojo-oscuro);
+}
+
+/* header */
+
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: center; */
+}
+.header__text{
+    position: absolute;
+    padding: 2rem;
+    margin-bottom: 250px;
+}
+.header__text h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.slider{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate;
+    /* animation-timing-function: ease-in; */
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+
+/* peluclas */
+
+#peliculas{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    /* background-color: yellow; */
+}
+.head-text{
+    padding-top: 50px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.peliculas__container{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-gap: 20px;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: .5s;
+}
+.content h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+.content button{
+    width: 50px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.content:hover{
+    opacity: 1;
+}
+.ver-mas{
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+.ver-mas:hover{
+    background-color: var(--rojo-oscuro);
+}
+/* series */
+
+#series{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+/* proximamente */
+#proximamente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+.proximamente__container{
+    display: flex;
+    padding: 30px;
+}
+.card-2{
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 20px;
+}
+
+/* footer */
+
+.footer{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: end;
+    padding: 20px;
+    background-color: var(--negro-claro);
+}
+.footer__container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px;
+    /* background-color: violet; */
+}
+.footer__container img{
+    width: 180px;
+    margin: 10px;
+}
+.footer__container{
+    transition: all .8s;
+}
+.footer__container a:hover{
+    color: var(--rojo);
+}
